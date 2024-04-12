@@ -20,6 +20,8 @@ describe Exercise do
 
   describe "#even_fibonacci" do
     it "should sum the even numbers in a Fibonacci sequence" do
+      Exercise.even_fibonacci(2).must_equal 0
+      Exercise.even_fibonacci(3).must_equal 2
       Exercise.even_fibonacci(5).must_equal 2
       Exercise.even_fibonacci(11).must_equal 44
       Exercise.even_fibonacci(19).must_equal 3382
